@@ -6,7 +6,7 @@ const MovieSearch = () => {
 
   const handleSearch = async () => {
     const apiKey = 'a4edf775'
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`
     const response = await fetch(url)
     const data = await response.json()
     setMovieInfo(data)
