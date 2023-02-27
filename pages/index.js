@@ -20,7 +20,12 @@ const MovieSearch = () => {
         <div>
           <h2>{movieInfo.Title}</h2>
           <p>{movieInfo.Plot}</p>
-          <img src={movieInfo.Poster} alt={movieInfo.Title} />
+          <img
+            src={movieInfo.Poster}
+            alt={movieInfo.Title}
+            width={300}
+            height={500}
+          />
         </div>
       )}
     </div>
